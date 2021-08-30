@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ExemploApiCatalogoJogos</name>
+    </assembly>
+    <members>
+        <!-- Badly formed XML comment ignored for member "M:ExemploApiCatalogoJogos.Controllers.V1.JogosController.Obter(System.Int32,System.Int32)" -->
+        <member name="M:ExemploApiCatalogoJogos.Controllers.V1.JogosController.Obter(System.Guid)">
+            <summary>
+            Método: Get - Parâmetro: Id
+            </summary>
+            <param name="idJogo">Id</param>
+            <response code="200">Mensagem: Jogo Filtrado com sucesso !</response>
+            <response code="204">Mensagem: Jogo não existe !</response>   
+        </member>
+        <member name="M:ExemploApiCatalogoJogos.Controllers.V1.JogosController.InserirJogo(ExemploApiCatalogoJogos.InputModel.JogoInputModel)">
+            <summary>
+            Método: Inserir - Parâmetro: jogoInputModel
+            </summary>
+            <param name="jogoInputModel">Registro do Jogo</param>
+            <response code="200">Mensagem: Inserido com sucesso !</response>
+            <response code="422">Mensagem: Já existe um jogo com mesmo nome e mesma produtora</response>   
+        </member>
+        <member name="M:ExemploApiCatalogoJogos.Controllers.V1.JogosController.AtualizarJogo(System.Guid,ExemploApiCatalogoJogos.InputModel.JogoInputModel)">
+            <summary>
+            Método: Atualizar - Parâmetro: idJogo, jogoInputModel
+            </summary>
+            /// <param name="idJogo">Id</param>
+            <param name="jogoInputModel">Novos dados do jogo</param>
+            <response code="200">Mensagem: Atualizado com sucesso !</response>
+            <response code="404">Mensagem: Jogo não existe !</response>   
+        </member>
+        <member name="M:ExemploApiCatalogoJogos.Controllers.V1.JogosController.AtualizarJogo(System.Guid,System.Double)">
+            <summary>
+            Atualizar o preço de um jogo
+            </summary>
+            /// <param name="idJogo">Id do jogo a ser atualizado</param>
+            <param name="preco">Novo preço do jogo</param>
+            <response code="200">Cao o preço seja atualizado com sucesso</response>
+            <response code="404">Caso não exista um jogo com este Id</response>   
+        </member>
+        <member name="M:ExemploApiCatalogoJogos.Controllers.V1.JogosController.ApagarJogo(System.Guid)">
+            <summary>
+            Excluir um jogo
+            </summary>
+            /// <param name="idJogo">Id do jogo a ser excluído</param>
+            <response code="200">Cao o preço seja atualizado com sucesso</response>
+            <response code="404">Caso não exista um jogo com este Id</response>   
+        </member>
+    </members>
+</doc>
